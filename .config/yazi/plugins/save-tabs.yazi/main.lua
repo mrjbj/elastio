@@ -1,0 +1,1 @@
+/nix/store/x99y852nbbrs1bb942sy7zdcxcllphri-home-manager-files/.config/yazi/plugins/save-tabs.yazi/main.lua

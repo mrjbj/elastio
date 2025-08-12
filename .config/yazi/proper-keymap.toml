@@ -1,0 +1,20 @@
+# This extends the default keymap rather than replacing it
+[[manager.prepend_keymap]]
+on = ["z"]
+run = "plugin --sync zoxide"
+desc = "Zoxide integration"
+
+[[manager.prepend_keymap]]
+on = ["T"]
+run = "plugin toggle-pane max-preview"
+desc = "Maximize preview pane"
+
+[[manager.prepend_keymap]]
+on = ["i"]
+run = "plugin toggle-pane min-preview"
+desc = "Minimize preview pane"
+
+[[input.prepend_keymap]]
+on = ["<C-a>"]
+run = "move_beginning"
+desc = "Move to beginning of line"

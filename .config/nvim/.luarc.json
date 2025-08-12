@@ -1,0 +1,18 @@
+{
+  "diagnostics.globals": [
+    "yaml_language_server",
+    "tflint",
+    "stylua",
+    "shfmt",
+    "pyright",
+    "prittier",
+    "markdownlint",
+    "lua_language_server",
+    "json_lsp",
+    "isort",
+    "hadolint",
+    "black",
+    "bash_language_server",
+    "on_attach"
+  ]
+}

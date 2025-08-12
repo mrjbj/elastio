@@ -1,0 +1,23 @@
+[mgr]
+linemode = "size"
+ratio = [1, 3, 4]
+show_hidden = true
+show_symlink = true
+sort_by = "natural"
+sort_dir_first = true
+sort_sensitive = false
+sort_translit = true
+
+[preview]
+tab_size = 2
+wrap = "no"
+
+[plugin]
+prepend_previewers = [
+  {name = "*.md", run = "mdcat" },
+]
+preload = [
+  "zoxide.yazi",
+  "toggle-pane.yazi",
+  "debug-keys.yazi"
+]

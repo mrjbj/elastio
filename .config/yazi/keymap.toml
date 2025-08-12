@@ -1,0 +1,23 @@
+# mgr is the normal administrative mode
+# input is when it's asking you to enter stuff into a form
+# help is the filter/help screen
+# prepend_keymap -> "before" (higher priority) than defaults - will override if necessary
+# append_keymap  -> "after" defaults, hardly ever used.
+[mgr]
+prepend_keymap = [
+  { on = ["z"], run = "plugin --sync zoxide" },
+  { on = ["Z"], run = "shell 'zoxide add \"$PWD\"' --confirm" },
+  { on = ["i"], run = "plugin toggle-pane max-preview" },
+  { on = ["T"], run = "plugin save-tabs save_tabs" },
+  { on = ["R"], run = "plugin save-tabs restore_tabs" },
+]
+
+[input]
+prepend_keymap = [
+  { on = ["<C-a>"], run = "move_beginning" },
+]
+
+[help]
+prepend_keymap = [
+  { on = ["<C-;>"], run = "escape" },
+]
